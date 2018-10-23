@@ -1,0 +1,7 @@
+doctrine:
+    dbal:
+        types:
+            filled_string: App\Entity\DbalTypes\FilledString
+            item_type: App\Entity\DbalTypes\ItemType
+            unsigned_positive_int: App\Entity\DbalTypes\UnsignedPositiveInt
+

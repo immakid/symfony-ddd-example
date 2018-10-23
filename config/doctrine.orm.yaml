@@ -1,0 +1,7 @@
+App:
+  is_bundle: false
+  type: yml
+  # "dir" in this case must be pointed where are stored your doctrine files (can be anywhere inside the project dir)
+  dir: "%kernel.project_dir%/config/doctrine"
+  prefix: App\Entity
+

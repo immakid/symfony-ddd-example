@@ -1,0 +1,23 @@
+App\Domain\Entity\Basket:
+  type: entity
+  repositoryClass: App\Repository\BasketRepository
+
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    name:
+      type: string
+      length: 100
+      nullable: false
+    capacity:
+      type: integer
+      nullable: false
+
+  oneToMany:
+    items:
+      targetEntity: App\Entity\Item
+      mappedBy: basket
+      cascade: ["persist", "remove"]
